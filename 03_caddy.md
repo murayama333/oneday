@@ -1,16 +1,16 @@
 # Webサーバのインストール
 
-それでは実際にWebサーバを動作させてみましょう。本格的なWebサーバを構築するにはApacheやnginxがオススメですが、まずは使い方がシンプルなCADDYというサーバソフトウェアで実験してみましょう。
+それでは実際にWebサーバを動作させてみましょう。本格的なWebサーバを構築するにはApacheやnginxがオススメですが、まずは使い方がシンプルなCaddyというサーバソフトウェアで実験してみましょう。
 
 https://caddyserver.com/
 
 ![](https://s3-ap-northeast-1.amazonaws.com/itcaret/itc/img/webpg/day3/caddy3.png)
 
-CADDYは次世代の通信プロトコルであるHTTP2.0をサポートする新鋭のWebサーバです。シンプルで使いやすいのも特徴の一つです。
+Caddyは次世代の通信プロトコルであるHTTP2.0をサポートする新鋭のWebサーバです。シンプルで使いやすいのも特徴の一つです。
 
 ## ダウンロード
 
-以下のURLからWindowsやOS Xといったプラットフォームを選択してCADDYをダウンロードします。
+以下のURLからWindowsやOS Xといったプラットフォームを選択してCaddyをダウンロードします。
 
 https://caddyserver.com/download
 
@@ -54,9 +54,9 @@ Activating privacy features... done.
 http://:2015
 ```
 
-CADDYは2015番ポートで起動しているのがわかります。
+Caddyは2015番ポートで起動しているのがわかります。
 
-> control + c を入力するとCADDYは停止します。
+> control + c を入力するとCaddyは停止します。
 
 
 ブラウザから以下のURLにアクセスしてみましょう。
@@ -71,7 +71,7 @@ http://（IPアドレス）:2015
 
 続いて以下のHTMLファイルを作成し、sample.htmlという名前でファイルを保存します。このとき保存先のフォルダを「caddyフォルダ（ZIPを解凍したフォルダ）」としてください。
 
-> この場合のCADDYの公開フォルダは「caddyフォルダ（ZIPを解凍したフォルダ）」となります。
+> この場合のCaddyの公開フォルダは「caddyフォルダ（ZIPを解凍したフォルダ）」となります。
 
 ```html
 <!DOCTYPE html>

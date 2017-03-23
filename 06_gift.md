@@ -1,74 +1,4 @@
-# PHPでWebアプリをつくるには
-
-最後に少し背伸びをしてPHPというプログラミング言語を使ってプログラムを作ってみましょう。
-
-> 以降はPHPのインストールが完了している必要があります。
-
-Atomなどのエディタを起動して、以下の内容を記述し itcaret.php という名前でデスクトップのitcaretフォルダに保存します。
-
-```php
-<?php
-$notes = file("notes.txt");
-if (isset($_POST["note"])) {
-  $note = $_POST["note"];
-  array_push($notes, $note);
-  file_put_contents("notes.txt", $note . PHP_EOL, FILE_APPEND);
-}
-?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>IT CARET</title>
-  </head>
-  <body>
-    <h1>IT CARET</h1>
-    <form action="" method="post">
-      <input type="text" name="note">
-      <input type="submit" value="save">
-    </form>
-    <ul>
-      <?php for($i = 0; $i < count($notes); $i++){ ?>
-      <li><?php echo $notes[$i]; ?></li>
-      <?php } ?>
-    </ul>
-  </body>
-</html>
-```
-
-> 注意：このプログラムを動かすには、デスクトップ上にnotes.txtという空のファイルを用意しておく必要があります。
-
-### プログラムの実行
-
-PHPのプログラムはコンソール上で実行します。
-
-Windowsの場合はコマンドプロンプト（Macの場合はターミナル）を起動して、デスクトップに移動します。
-
-```
-cd Desktop/itcaret
-```
-
-PHPプログラムを実行するには以下のように入力します。
-
-```
-php -S localhost:8000
-```
-
-そのあとブラウザ（Chromeなど）を開いて、次のURLを入力します。
-
-```
-http://localhost:8000/itcaret.php
-```
-
-
-## 何をしたのか？
-
-HTMLにPHPプログラムを組み合わせると、ユーザの入力データを処理できるようになります。言い方を変えると、このプログラムの利用者はブラウザを使ってプログラムを利用できるようになります。このようなプログラムはWebアプリケーションなどと呼ばれます。
-
-> プログラムの利用者（ブラウザ）とPHPブログラムは別々のコンピュータに配置しても動作します。
-
-
-### PHPは多用途に使える！
+# 付録）PHPで作業を自動化する
 
 さて、PHPの活躍する分野はWebアプリケーションの開発だけではありません。PHPのようなプログラミング言語をマスターすると、日々のルーチンワークを自動化することができます。
 
@@ -87,6 +17,8 @@ for ($i = 0; $i < count($months); $i++) {
   copy($fileName, $year . "/" . $months[$i] . "/" . $fileName);
 }
 ```
+
+## プログラムの実行
 
 このPHPプログラムはコンソール上で実行します。
 
