@@ -8,7 +8,7 @@
 + <a href="http://windows.php.net/download" target="_blank" >PHP（Windowsの方のみ）</a>
   + <a href="09_windows.md"> - PHPインストールガイド</a>
 
-### ハンズオン - はじめてのプログラミング
+### ハンズオン
 
 + 1-1. <a href="01_html.md">はじめてのWebプログラミング</a>
 + 1-2. <a href="02_web.md">インターネットの仕組み</a>
