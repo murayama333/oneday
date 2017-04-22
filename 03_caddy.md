@@ -14,6 +14,18 @@ Caddyは次世代の通信プロトコルであるHTTP2.0をサポートする�
 
 https://caddyserver.com/download
 
+
+### 追記2017/03/26
+
+現行のWindows版のCaddy 0.9.5 は起動時にエラーメッセージが出るので、以下のリンクから0.9.4をダウンロードしてください。
+
+[Windows 64bit]
+https://github.com/mholt/caddy/releases/download/v0.9.4/caddy_windows_amd64.zip
+
+[Windows 32bit]
+https://github.com/mholt/caddy/releases/download/v0.9.4/caddy_windows_386.zip
+
+
 ダウンロードしたZIPファイルを解凍すると次のようなフォルダが展開されるでしょう。
 
 + caddyフォルダ
