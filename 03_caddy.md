@@ -4,7 +4,7 @@
 
 https://caddyserver.com/
 
-![](https://s3-ap-northeast-1.amazonaws.com/itcaret/itc/img/webpg/day3/caddy3.png)
+![](https://s3-ap-northeast-1.amazonaws.com/itcaret/itc/img/webpg/day3/caddy3.png?a=b)
 
 Caddyは次世代の通信プロトコルであるHTTP2.0をサポートする新鋭のWebサーバです。シンプルで使いやすいのも特徴の一つです。
 
